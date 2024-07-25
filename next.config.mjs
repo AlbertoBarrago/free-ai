@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     env: {
-        model: process.env.MODEL || 'phi3',
+        ollamaModel: process.env.OLLAMA_MODEL || 'phi3',
+        ollamaSystem: process.env.OLLAMA_SYSTEM || 'beNice',
     },
 };
 
